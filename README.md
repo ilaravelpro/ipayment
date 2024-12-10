@@ -1,2 +1,2 @@
-# ipayment
-iPayment
+# iPayment
+ilaravel/ipayment

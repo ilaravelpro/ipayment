@@ -1,0 +1,40 @@
+{
+    "name": "ilaravelpro/ipayment",
+    "description": "iLaravel iPayment",
+    "keywords": [
+        "laravel",
+        "log",
+        "reports"
+    ],
+    "homepage": "https://ilaravel.iamir.net/packages/ipayments",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "iamirnet",
+            "email": "me@iamir.net",
+            "homepage": "https://iamir.net",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "classmap": [
+            "src"
+        ],
+        "psr-4": {
+            "iLaravel\\iPayment\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "iLaravel\\iPayment\\Providers\\AppServiceProvider",
+                "iLaravel\\iPayment\\Providers\\RouteServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
