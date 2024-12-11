@@ -14,6 +14,7 @@ Route::namespace('v1')->prefix('v1')->middleware('auth:api')->group(function () 
         Route::apiResource('payment_accounts', 'PaymentAccountController', ['as' => 'api']);
     if (ipayment('routes.api.payment_transactions.status'))
         Route::apiResource('payment_transactions', 'PaymentTransactionsController', ['as' => 'api']);
+    Route::apiResource('discounts', 'DiscountController', ['as' => 'api']);
 });
 
 
