@@ -7,7 +7,7 @@
  * Copyright (c) 2020-2022. Powered by iAmir.net
  */
 
-namespace iLaravel\iShop\iApp;
+namespace iLaravel\iPayment\iApp;
 
 class Discount extends \iLaravel\Core\iApp\Model
 {
