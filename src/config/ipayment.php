@@ -48,71 +48,71 @@ return [
         ],
         'cmc' => [
             'name' => 'cms',
-            'title' => 'سیستم تولید محتوا',
+            'title' => _t('CMS Payment'),
             'model' => \iLaravel\iPayment\Vendor\Payment\CMSMethod::class,
             'authenticate' => [
                 [
-                    'label' => 'آدرس CMS',
+                    'label' => _t('CMC Url'),
                     'name' => 'url'
                 ],
                 [
-                    'label' => 'کلیدخصوصی',
+                    'label' => _t('Api Key'),
                     'name' => 'key'
                 ]
             ],
         ],
         'xcard' => [
             'name' => 'xcard',
-            'title' => 'ایکس کارت',
+            'title' => _t('XCard Payment'),
             'model' => \iLaravel\iPayment\Vendor\Payment\XCardMethod::class,
             'authenticate' => [
                 [
-                    'label' => 'آدرس ایکس‌کارت',
+                    'label' => _t('XCard Url'),
                     'name' => 'url'
                 ],
                 [
-                    'label' => 'کلیدخصوصی',
+                    'label' => _t('Api Key'),
                     'name' => 'key'
                 ]
             ],
         ],
         'behpardakht' => [
             'name' => 'behpardakht',
-            'title' => 'به‌پرداخت ملت',
-            'model' => \iLaravel\iPayment\Vendor\Payment\ParsianMethod::class,
+            'title' => _t('Behpardakht'),
+            'model' => \iLaravel\iPayment\Vendor\Payment\BehpardakhtMethod::class,
             'authenticate' => [
                 [
-                    'label' => 'شماره پایانه',
+                    'label' => _t('Terminal No'),
                     'name' => 'terminal'
                 ],
                 [
-                    'label' => 'نام‌کاربری',
+                    'label' => _t('Username'),
                     'name' => 'username'
                 ],
                 [
-                    'label' => 'رمزعبور',
+                    'label' => _t('Password'),
                     'name' => 'password'
                 ]
             ],
         ],
         'parsian' => [
             'name' => 'parsian',
-            'title' => 'پارسیان',
+            'title' => _t('Parsian Bank'),
             'model' => \iLaravel\iPayment\Vendor\Payment\ParsianMethod::class,
             'authenticate' => [
                 [
-                    'label' => 'مرچنت‌کد',
+                    'label' => _t('Merchant ID'),
                     'name' => 'mid'
                 ]
             ],
         ],
         'saman' => [
             'name' => 'saman',
-            'title' => 'سامان',
+            'title' => _t('Saman Bank'),
             'model' => \iLaravel\iPayment\Vendor\Payment\SamanMethod::class,
             'authenticate' => [
                 [
-                    'label' => 'مرچنت‌کد',
+                    'label' => _t('Merchant ID'),
                     'name' => 'mid'
                 ]
             ],
