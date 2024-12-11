@@ -7,6 +7,6 @@
  * Copyright (c) 2020. Powered by iamir.net
  */
 
-namespace iLaravel\iShop\iApp\Http\Controllers\API\v1;
+namespace iLaravel\iPayment\iApp\Http\Controllers\API\v1;
 
 class PaymentTransactionController extends \iLaravel\Core\iApp\Http\Controllers\API\ApiController {}
